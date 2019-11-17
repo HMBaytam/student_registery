@@ -17,7 +17,7 @@ class Database:
     
     # Create new id
     def create_id(self, table, prefix):
-        self.c.execute(f'SELECT id FROM {table} ORDER BY id DESC')
+        self.c.execute(f'SELECT id FROM {table} ORDER BY id DESC LIMIT 1')
         rows = self.c.fetchall()
         item = rows[0]
         temp_id = int(item[0].strip(prefix))
