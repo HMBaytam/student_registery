@@ -1,0 +1,25 @@
+<table>
+    <tr>
+        <th>ID</th>
+        <th>First Name</th>
+        <th>Last Name</th>
+        <th>Address</th>
+        <th>City</th>
+        <th>State</th>
+        <th>Zip Code</th>
+        <th>Email</th>
+    </tr>
+    {% for line in lines %}
+    <tr>
+        <th>{{line[0]}}</th>
+        <th>{{line[1]}}</th>
+        <th>{{line[2]}}</th>
+        <th>{{line[3]}}</th>
+        <th>{{line[4]}}</th>
+        <th>{{line[5]}}</th>
+        <th>{{line[6]}}</th>
+        <th>{{line[7]}}</th>
+    </tr>
+    {% endfor %}
+</table>
+
