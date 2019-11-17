@@ -1,4 +1,4 @@
-#!/Users/personal/Desktop/sandbox/student_regestery/env/bin/python
+#!/Users/personal/Desktop/sandbox/student_regestery/.env/bin/python
 # -*- coding: utf-8 -*-
 import re
 import sys
